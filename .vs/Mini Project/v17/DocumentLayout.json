@@ -1,0 +1,576 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Unity\\Mini Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\gui\\ingame_vaccinecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\gui\\ingame_vaccinecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\mini project\\assets\\002_script\\manager\\gamescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\manager\\gamescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\mini project\\assets\\002_script\\enemy\\roundmove2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\roundmove2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\manager\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\manager\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playerhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playerhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playermove2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playermove2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\mini project\\assets\\002_script\\enemy\\trackingmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\trackingmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\constant\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\constant\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playerjump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playerjump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\shoplogui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\shoplogui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\mini project\\assets\\002_script\\enemy\\bossattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\bossattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\mini project\\assets\\002_script\\enemy\\virusattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\virusattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\enemy\\bossmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\bossmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\enemy\\bossani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\bossani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\shopslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\shopslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\vaccinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\vaccinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\shopslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\shopslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\shopitemcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\shopitemcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\codevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\codevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\ui_refresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\ui_refresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\inventory\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\inventory\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\shop\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\shop\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\inventory\\inventoryslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\inventory\\inventoryslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\vaccine\\vaccineprojetile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\vaccine\\vaccineprojetile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\animation\\playeranicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\animation\\playeranicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\enemy\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\enemy\\enemyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playerclimbing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playerclimbing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\vaccine\\vaccineani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\vaccine\\vaccineani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\player\\playerfly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\player\\playerfly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\object\\vaccinecodecounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\object\\vaccinecodecounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\object\\telepoter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\object\\telepoter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|C:\\Users\\USER\\Unity\\Mini Project\\assets\\002_script\\object\\vaccinecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE4C28-835F-FBB8-C68B-DEB75A1B3AC2}|Assembly-CSharp.csproj|solutionrelative:assets\\002_script\\object\\vaccinecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoundMove2D.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\RoundMove2D.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\RoundMove2D.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\RoundMove2D.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\RoundMove2D.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:24:48.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Manager\\GameSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Manager\\GameSceneManager.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Manager\\GameSceneManager.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Manager\\GameSceneManager.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:26:14.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Constant.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Constant\\Constant.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Constant\\Constant.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Constant\\Constant.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Constant\\Constant.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T04:21:01.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrackingMove.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\TrackingMove.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\TrackingMove.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\TrackingMove.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\TrackingMove.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAzwBgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:03:32.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMove2D.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerMove2D.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerMove2D.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerMove2D.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerMove2D.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA9wGMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:19:25.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerHp.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerHp.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerHp.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerHp.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerHp.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA9wBEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:05:47.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ingame_VaccineCode.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\GUI\\Ingame_VaccineCode.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\GUI\\Ingame_VaccineCode.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\GUI\\Ingame_VaccineCode.cs",
+              "RelativeToolTip": "Assets\\002_Script\\GUI\\Ingame_VaccineCode.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:14:27.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShopLogUI.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopLogUI.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\ShopLogUI.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopLogUI.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\ShopLogUI.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T12:45:48.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BossAttack.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\BossAttack.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossAttack.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\BossAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T02:12:35.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerJump.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerJump.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerJump.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerJump.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerJump.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwDEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:10:12.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Manager\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Manager\\PlayerData.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Manager\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Manager\\PlayerData.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvxIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T03:53:09.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VirusAttack.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\VirusAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\VirusAttack.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\VirusAttack.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\VirusAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T02:12:54.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BossMove.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossMove.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\BossMove.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossMove.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\BossMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T01:11:54.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ShopSlot.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\ShopSlot.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopSlot.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\ShopSlot.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwCYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T03:56:05.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BossAni.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossAni.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\BossAni.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\BossAni.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\BossAni.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T02:03:21.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VaccineController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\VaccineController.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\VaccineController.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\VaccineController.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\VaccineController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:24:57.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CodeValue.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\CodeValue.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\CodeValue.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\CodeValue.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\CodeValue.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T12:54:37.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShopSlotManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopSlotManager.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\ShopSlotManager.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopSlotManager.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\ShopSlotManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwDMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T12:58:41.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShopItemCatalog.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopItemCatalog.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\ShopItemCatalog.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\ShopItemCatalog.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\ShopItemCatalog.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:12:48.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Inventory\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Inventory\\InventorySlot.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Inventory\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Inventory\\InventorySlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T04:07:27.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UI_Refresh.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\UI_Refresh.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\UI_Refresh.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\UI_Refresh.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\UI_Refresh.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwC0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T02:51:02.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BuyItem.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\BuyItem.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Shop\\BuyItem.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Shop\\BuyItem.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Shop\\BuyItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T03:14:01.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InventorySlotManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Inventory\\InventorySlotManager.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Inventory\\InventorySlotManager.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Inventory\\InventorySlotManager.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Inventory\\InventorySlotManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T04:07:30.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PlayerInteract.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerInteract.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerInteract.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerInteract.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerInteract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:38:06.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VaccineProjetile.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Vaccine\\VaccineProjetile.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Vaccine\\VaccineProjetile.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Vaccine\\VaccineProjetile.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Vaccine\\VaccineProjetile.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:09:48.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PlayerAniController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Animation\\PlayerAniController.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Animation\\PlayerAniController.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Animation\\PlayerAniController.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Animation\\PlayerAniController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAmwFcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:58:46.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EnemyHp.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\EnemyHp.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Enemy\\EnemyHp.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Enemy\\EnemyHp.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Enemy\\EnemyHp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:35:00.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PlayerClimbing.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerClimbing.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerClimbing.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerClimbing.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerClimbing.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwFoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T05:10:19.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "VaccineAni.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Vaccine\\VaccineAni.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Vaccine\\VaccineAni.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Vaccine\\VaccineAni.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Vaccine\\VaccineAni.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:02:25.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IDamageable.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Interface\\IDamageable.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Interface\\IDamageable.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Interface\\IDamageable.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Interface\\IDamageable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T02:13:54.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PlayerFly.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerFly.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Player\\PlayerFly.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Player\\PlayerFly.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Player\\PlayerFly.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T02:48:06.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VaccineCodeCounter.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\VaccineCodeCounter.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Object\\VaccineCodeCounter.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\VaccineCodeCounter.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Object\\VaccineCodeCounter.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:17:58.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Telepoter.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\Telepoter.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Object\\Telepoter.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\Telepoter.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Object\\Telepoter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:24:27.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "VaccineCode.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\VaccineCode.cs",
+              "RelativeDocumentMoniker": "Assets\\002_Script\\Object\\VaccineCode.cs",
+              "ToolTip": "C:\\Users\\USER\\Unity\\Mini Project\\Assets\\002_Script\\Object\\VaccineCode.cs",
+              "RelativeToolTip": "Assets\\002_Script\\Object\\VaccineCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:12:22.829Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
