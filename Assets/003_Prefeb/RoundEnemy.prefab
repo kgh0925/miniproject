@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7069650505834124148}
   - component: {fileID: -8000787252738254608}
   - component: {fileID: 1318912111779917242}
+  - component: {fileID: 2420351747142497710}
+  - component: {fileID: 5943031938951642677}
   m_Layer: 7
   m_Name: RoundEnemy
   m_TagString: Virus
@@ -65,11 +67,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b34a83a5ac91c6e459f3cf9005cf2b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VirusAttack
+  HitSound: {fileID: 0}
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
-  AttackPowerX: 20
-  AttackPowerY: 60
+  AttackPowerX: 40
+  AttackPowerY: 100
+  Delay: 0.05
 --- !u!61 &1318912111779917242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -116,6 +120,38 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &2420351747142497710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288856865636061587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac435ced50312643a9fb9cc3c782758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHp
+  MaxHp: 4
+  CurrentHp: 4
+--- !u!114 &5943031938951642677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288856865636061587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c378fac066e8f4e90f87c3f5b80573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VirusMob
+  VirusHp: {fileID: 2420351747142497710}
+  MySpriteRenderer: {fileID: 8677950015616706790}
+  MyCollider2D: {fileID: 1318912111779917242}
+  RespawnTime: 10
+  Round: {fileID: 7069650505834124148}
+  Tracking: {fileID: 0}
 --- !u!1 &4912592652346610182
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ public class VaccineAttack : MonoBehaviour
 {
     [Header("Ref")]
     [SerializeField] private VaccinePorjetile Prefab;
+    [SerializeField] private AudioClip AttackSound;
     [Header("Setting")]
     [SerializeField] private float AttackDelay;
     [SerializeField] private float AttackRange;
@@ -12,6 +13,10 @@ public class VaccineAttack : MonoBehaviour
     private float LastAttackTime = -999f;
 
     public LayerMask GetLayer => TargetLayer;
+    private void Awake()
+    {
+        AttackSound = Resources.Load<AudioClip>("Sound/VaccineAttackSound");
+    }
     public void AttackTarget(GameObject Target)
     {
         TryFire(Target);
@@ -29,6 +34,10 @@ public class VaccineAttack : MonoBehaviour
         Vector3 SpawnPosition = transform.position;
         VaccinePorjetile SpawnedProjectile = Instantiate(Prefab, SpawnPosition, Quaternion.identity);
         SpawnedProjectile.Initialize(FireDirection,TargetLayer);
+        if(SoundManager.Instance != null && AttackSound != null)
+        {
+            SoundManager.Instance.PlaySfxOneShot(AttackSound);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

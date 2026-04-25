@@ -8,6 +8,7 @@ public class PlayerAniController : MonoBehaviour
     [Tooltip("Move & Run")][SerializeField] private PlayerMove2D MoveState;
     [Tooltip("Jump & Ground")][SerializeField] private PlayerJump JumpState;
     [Tooltip("Climbing")][SerializeField] private PlayerClimbing ClimbingState;
+    [SerializeField] private SpriteRenderer MySpriteRenderer;
 
     [Header("Settings")]
     [SerializeField] private string JumpParameter;
@@ -18,6 +19,7 @@ public class PlayerAniController : MonoBehaviour
     [SerializeField] private string LeftClimbingParameter;
     [SerializeField] private string RightClimbingParameter;
     [SerializeField] private string IsMoveParameter;
+    [SerializeField] private string DirectionParameter;
 
     private int JumpHash;
     private int WalkHash;
@@ -27,6 +29,8 @@ public class PlayerAniController : MonoBehaviour
     private int StunHash;
     private int GroundHash;
     private int IsMoveHash;
+    private int DirectionHash;
+
     private void Start()
     {
         HashSetUp();
@@ -51,6 +55,29 @@ public class PlayerAniController : MonoBehaviour
         ClimbingState.Climbing -= ClimbingAni;
     }
 
+/*    private void Update()
+    {
+        if(JumpState.GroundTrue)
+        {
+            if(MoveState.DIRECTION == Direction.Left)
+            {
+                MySpriteRenderer.flipX = true;
+            }
+            else if(MoveState.DIRECTION == Direction.Right)
+            {
+                MySpriteRenderer.flipX = false;
+            }
+        }
+        if (ClimbingState.LeftWall == true)
+        {
+            MySpriteRenderer.flipX = false;
+        }
+        else if (ClimbingState.RightWall == true)
+        {
+            MySpriteRenderer.flipX = true;
+        }
+    }*/
+
     private void HashSetUp()
     {
         JumpHash = Animator.StringToHash(JumpParameter);
@@ -61,10 +88,13 @@ public class PlayerAniController : MonoBehaviour
         StunHash = Animator.StringToHash(StunParameter);
         GroundHash = Animator.StringToHash(GroundParameter);
         IsMoveHash = Animator.StringToHash(IsMoveParameter);
+        DirectionHash = Animator.StringToHash(DirectionParameter);
     }
     private void MoveAni(float MoveX)
     {
         MyAnimator.SetFloat(WalkHash, MoveX);
+        MyAnimator.SetFloat(DirectionHash,
+            MoveState.DIRECTION == Direction.Left ? 0 : 1);
         if(MoveX == 0)
         {
             MyAnimator.SetBool(IsMoveHash, false);

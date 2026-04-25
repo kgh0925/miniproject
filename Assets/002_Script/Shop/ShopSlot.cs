@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ShopSlot : MonoBehaviour
 {
     [Header("Ref")]
-    [SerializeField] private BuyItem BuyItem;
+    [SerializeField] private BuyItem MyBuyItem;
     [SerializeField] private Button ItemButton;
     [SerializeField] private TMP_Text VaccineCode;
     [SerializeField] private Image UI_Image;
@@ -14,7 +14,11 @@ public class ShopSlot : MonoBehaviour
     private ShopItemCatalog catalog;
     private void Awake()
     {
-        BuyItem = FindFirstObjectByType<BuyItem>(FindObjectsInactive.Include);
+        //BuyItem = FindFirstObjectByType<BuyItem>(FindObjectsInactive.Include);
+    }
+    public void Init(BuyItem buyItem)
+    {
+        MyBuyItem = buyItem;
     }
     public void Bind(string Id, ShopItemCatalog Catalog, bool ButtonActive)
     {
@@ -51,10 +55,10 @@ public class ShopSlot : MonoBehaviour
 
     public void InfoUIOpen()
     {
-        if(BuyItem != null)
+        if(MyBuyItem != null)
         {
-            BuyItem.Info(ItemId, catalog);
-            BuyItem.gameObject.SetActive(true);
+            MyBuyItem.Info(ItemId, catalog);
+            MyBuyItem.gameObject.SetActive(true);
         }
     }
 }

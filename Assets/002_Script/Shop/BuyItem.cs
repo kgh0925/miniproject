@@ -50,10 +50,16 @@ public class BuyItem : MonoBehaviour
         if(PlayerData.Instance != null)
         {
             PurchaseRequest purchaseRequest = BuyItemQueue.Dequeue();
-            if(PlayerData.Instance.PurchaseItem(purchaseRequest.Id, purchaseRequest.BuyCode))
+            if (PlayerData.Instance.PurchaseItem(purchaseRequest.Id, purchaseRequest.BuyCode))
             {
                 //TODO : 구매완료 UI
                 if (LogUI == null) return;
+                if (PlayerData.Instance != null)
+                {
+                    UndoData temp = new UndoData(ItemId, purchaseRequest.BuyCode, 
+                        PlayerData.Instance.EnquipSkin, PlayerData.Instance.EnquipMap);
+                    PlayerData.Instance.StackPush(temp);
+                }
                 LogUI.ResultLog(true);
             }
             else

@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
 using System;
 using UnityEngine;
+[Serializable]
 public enum Direction
 {
     Left,
@@ -13,11 +13,14 @@ public enum Direction
     Down,
     None
 }
+
+
 [Serializable]
 public enum EnemyState
 {
     Idle,
-    Chase
+    Chase,
+    Death
 }
 [Serializable]
 public enum PlayerState
@@ -43,7 +46,19 @@ public struct ShopCatalogEntry
     public int BuyCode;
 }
 [Serializable]
-public struct PurchaseRequest
+public struct MapData
+{
+    public string ItemId;
+    public Sprite[] Images;
+}
+[Serializable]
+public struct SkinData
+{
+    public string ItemId;
+    public RuntimeAnimatorController Animation;
+}
+[Serializable]
+public struct PurchaseRequest   
 {
     public string Id;
     public int BuyCode;
@@ -53,7 +68,45 @@ public struct PurchaseRequest
         BuyCode = buyCode;
     }
 }
+[Serializable]
+public struct StageClearData
+{
+    public int CodePercent;
+    public int MissCodeCount;
+    public int MinTime;
+    public int SecTime;
+    public int CollisionCount;
+    public int AppendCodeCount;
+    public int Rating;
 
+    public StageClearData(int CodePercent, int MissCodeCount, int MinTime,
+        int SecTime, int CollisionCount, int PickCodeCount, float Rating)
+    {
+        this.CodePercent = CodePercent;
+        this.MissCodeCount = MissCodeCount;
+        this.MinTime = MinTime;
+        this.SecTime = SecTime;
+        this.CollisionCount = CollisionCount;
+        this.AppendCodeCount = PickCodeCount;
+        this.Rating = (int)Rating;
+    }
+}
+[Serializable]
+public struct UndoData
+{
+    public string ItemId;
+    public int ItemValue;
+    public string WearSkin;
+    public string WearMap;
+
+    public UndoData(string id, int code, string skin, string map)
+    {
+        ItemId = id;
+        ItemValue = code;
+        WearSkin = skin;
+        WearMap = map;
+    }
+}
 public static class Direction8
 {
     public static Vector2 ToVector2(Direction direction)

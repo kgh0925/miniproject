@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2546502612785809715}
   - component: {fileID: 6586372752574968626}
   - component: {fileID: 5169485924878190490}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vaccine_Code
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,3 +141,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9eff38f0f3eca40a0e9f278027d305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VaccineCode
+  MySound: {fileID: 8300000, guid: 1ef1756ef9fc9124f9db5f56faa7463e, type: 3}

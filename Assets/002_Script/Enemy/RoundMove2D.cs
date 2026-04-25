@@ -27,9 +27,10 @@ public class RoundMove2D : MonoBehaviour
     }
     private void Update()
     {
-        transform.position += Vector3.right * MoveSpeed * Direction * Time.deltaTime;
-
-        if(transform.position.x  >= RightPoint_X)
+        //transform.position += Vector3.right * MoveSpeed * Direction * Time.deltaTime;
+        Vector2 NewPosition = ((Direction == 1 ? RightPoint.position : LeftPoint.position) - this.transform.position).normalized;
+        transform.position = (Vector2)transform.position + NewPosition * MoveSpeed * Time.deltaTime;
+        if (transform.position.x  >= RightPoint_X)
         {
             Direction = -1;
             MyImage.flipX = true;

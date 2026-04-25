@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7682417438633564796}
   - component: {fileID: 6338084319124922151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 145054827, guid: 82283d4b32d01de4ebf77f52a22e8b16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,7 +102,10 @@ GameObject:
   - component: {fileID: 5277741343697869348}
   - component: {fileID: 7214486116784293624}
   - component: {fileID: 612785670536980060}
-  m_Layer: 0
+  - component: {fileID: 1619564908253383980}
+  - component: {fileID: 5581976781378008835}
+  - component: {fileID: 5784642620107817791}
+  m_Layer: 7
   m_Name: TrackingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +122,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.6, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7682417438633564796}
@@ -138,10 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackingMove
   TargetObject: {fileID: 0}
-  MoveSpeed: 15
-  TrackingRange: 30
-  MyCollider2D: {fileID: 612785670536980060}
-  MySpriteRenderer: {fileID: 6338084319124922151}
+  MoveSpeed: 20
+  TrackingRange: 60
   MyState: 0
 --- !u!58 &612785670536980060
 CircleCollider2D:
@@ -179,3 +180,54 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -1}
   m_Radius: 7
+--- !u!114 &1619564908253383980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262259661199200485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac435ced50312643a9fb9cc3c782758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHp
+  MaxHp: 3
+  CurrentHp: 3
+--- !u!114 &5581976781378008835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262259661199200485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34a83a5ac91c6e459f3cf9005cf2b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VirusAttack
+  HitSound: {fileID: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  AttackPowerX: 40
+  AttackPowerY: 100
+  Delay: 0.05
+--- !u!114 &5784642620107817791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262259661199200485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c378fac066e8f4e90f87c3f5b80573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VirusMob
+  VirusHp: {fileID: 1619564908253383980}
+  MySpriteRenderer: {fileID: 6338084319124922151}
+  MyCollider2D: {fileID: 612785670536980060}
+  RespawnTime: 10
+  Round: {fileID: 0}
+  Tracking: {fileID: 7214486116784293624}

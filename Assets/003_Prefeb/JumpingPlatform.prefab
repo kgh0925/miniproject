@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117899880096547141}
   - component: {fileID: 3641177480660750456}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 7762952191773134520}
   - component: {fileID: 7485444900771094709}
   - component: {fileID: 9217494884603138057}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: JumpingPlatform
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -139,8 +139,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JumpingPlatform
   Sprite: {fileID: 3641177480660750456}
   Collider: {fileID: 9217494884603138057}
-  JumpPower: 50
+  JumpingSound: {fileID: 8300000, guid: db9ac5ac6ded142439d670b97019bbe0, type: 3}
+  JumpPower: 80
   isRepeat: 0
+  SpawnDelay: 5
 --- !u!58 &9217494884603138057
 CircleCollider2D:
   m_ObjectHideFlags: 0

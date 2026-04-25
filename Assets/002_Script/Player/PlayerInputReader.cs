@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInput))]
-public class PlayerInputReader : MonoBehaviour
+public class PlayerInputReader : MonoBehaviour, IResettable
 {
     private PlayerInput PlayerInput;
     #region InputAction
@@ -25,6 +26,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool FlyIsPressed { get; private set; }
     public bool GameMenuPressedThisFrame { get; private set; }
 
+    private bool IsRespawn;
     private void Awake()
     {
         if(PlayerInput == null)
@@ -33,13 +35,35 @@ public class PlayerInputReader : MonoBehaviour
         }
         ResolveActions();
     }
+    private void OnEnable()
+    {
+        if (SavePointManager.Instance == null) return;
+        SavePointManager.Instance.Register(this);
+    }
+    private void OnDisable()
+    {
+        if (SavePointManager.Instance == null) return;
+        SavePointManager.Instance.Unregister(this);
+    }
     private void Update()
     {
-        MoveVector = MoveAction != null ? MoveAction.ReadValue<Vector2>() : Vector2.zero;
-        JumpPressedThisFrame = JumpAction != null && JumpAction.WasPerformedThisFrame();
-        RunIsPressed = RunAction != null && RunAction.IsPressed();
-        FlyIsPressed = FlyAction != null && FlyAction.IsPressed();
-        GameMenuPressedThisFrame = GameMenuAction != null && GameMenuAction.WasPerformedThisFrame();
+        if (IsRespawn)
+        {
+            MoveVector = Vector2.zero;
+            JumpPressedThisFrame = false;
+            GameMenuPressedThisFrame = false;
+            FlyIsPressed = false;
+            RunIsPressed = false;
+        }
+        else
+        {
+            MoveVector = MoveAction != null ? MoveAction.ReadValue<Vector2>() : Vector2.zero;
+            JumpPressedThisFrame = JumpAction != null && JumpAction.WasPerformedThisFrame();
+            RunIsPressed = RunAction != null && RunAction.IsPressed();
+            FlyIsPressed = FlyAction != null && FlyAction.IsPressed();
+            GameMenuPressedThisFrame = GameMenuAction != null && GameMenuAction.WasPerformedThisFrame();
+        }
+
     }
     private void ResolveActions()
     {
@@ -72,4 +96,14 @@ public class PlayerInputReader : MonoBehaviour
         return m_Action;
     }
 
+    public void ResetToSavePoint()
+    {
+        StartCoroutine(RespawnSystem());
+    }
+    IEnumerator RespawnSystem()
+    {
+        IsRespawn = true;
+        yield return new WaitForSecondsRealtime(1.5f);
+        IsRespawn = false;
+    }
 }

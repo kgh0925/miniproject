@@ -16,8 +16,7 @@ public class Ingame_VaccineCode : MonoBehaviour
             Debug.Log("Vaccine_Slider == null || Vaccine_Percent == null || VaccineCodeCounterRef == null");
             return;
         }
-        Vaccine_Slider.value = 1 - ((float)VaccineCodeCounterRef.CurrentCount / VaccineCodeCounterRef.TotalCount);
-        Vaccine_Percent.text = (1 - ((float)VaccineCodeCounterRef.CurrentCount / VaccineCodeCounterRef.TotalCount)).ToString() + "%";
+        UpdateUI();
     }
     private void OnEnable()
     {

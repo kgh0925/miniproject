@@ -9,14 +9,15 @@ public class PlayerClimbing : MonoBehaviour
     [SerializeField] private Rigidbody2D MyRigidBody2D;
     [SerializeField] private PlayerJump MyPlayerJump;
     [SerializeField] private LayerMask TargetLayer;
+    [SerializeField] private Collider2D LeftClimbingCollider2D;
+    [SerializeField] private Collider2D RightClimbingCollider2D;
     [Header("Settings")]
     [SerializeField] private float ClimbingGravityScale;
-    [SerializeField] private float RayCastDistance;
 
     public event Action<bool,bool> Climbing;
     private float GravityScale;
-    private bool IsLeftWall;
-    private bool IsRightWall;
+    [SerializeField]private bool IsLeftWall;
+    [SerializeField]private bool IsRightWall;
     private bool WasWall;
     private bool WallJump;
 
@@ -91,7 +92,7 @@ public class PlayerClimbing : MonoBehaviour
                 MyRigidBody2D.linearVelocityY = 0f;
             }
         }
-        else if(!IsWall && MyPlayerHp.Climbing)
+        else if(!IsWall && MyPlayerHp.Climbing) //벽이 아니였는데 플레이어가 벽 타는경우
         {
             MyPlayerHp.ChangeState(PlayerState.Idle);
             Climbing?.Invoke(LeftWall,RightWall);
@@ -101,26 +102,20 @@ public class PlayerClimbing : MonoBehaviour
             }
             WallJump = false;
         }
-        WasWall = IsWall;
+        else if(MyPlayerHp.NotMove && WallJump)
+        {
+            WallJump = false;
+        }
+            WasWall = IsWall;
     }
     private void WallCheck()
     {
-        RaycastHit2D m_raycastHit2DLeft = Physics2D.Raycast(transform.position, Vector2.left, RayCastDistance, TargetLayer);
-        RaycastHit2D m_raycastHit2DRight = Physics2D.Raycast(transform.position, Vector2.right, RayCastDistance, TargetLayer);
-        IsLeftWall = m_raycastHit2DLeft.collider != null;
-        IsRightWall = m_raycastHit2DRight.collider != null;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.black;
-        Vector3 m_LineLeft = transform.position;
-        m_LineLeft.x -= RayCastDistance;
-        Vector3 m_LineRight = transform.position;
-        m_LineRight.x += RayCastDistance;
-
-        Gizmos.DrawLine(transform.position, m_LineLeft);
-        Gizmos.DrawLine(transform.position, m_LineRight);
+        if (LeftClimbingCollider2D == null || RightClimbingCollider2D == null)
+        {
+            return;
+        }
+        IsLeftWall = LeftClimbingCollider2D.IsTouchingLayers(TargetLayer);
+        IsRightWall = RightClimbingCollider2D.IsTouchingLayers(TargetLayer);
     }
 
     private void WallJumped()

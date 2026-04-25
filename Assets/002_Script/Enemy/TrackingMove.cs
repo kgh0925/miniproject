@@ -8,23 +8,9 @@ public class TrackingMove : MonoBehaviour
     [SerializeField] private Transform TargetObject;
     [SerializeField] private float MoveSpeed;
     [SerializeField] private float TrackingRange;
-    [SerializeField] private Collider2D MyCollider2D;
-    [SerializeField] private SpriteRenderer MySpriteRenderer;
 
     [Header("Inspector View")]
     [SerializeField] private EnemyState MyState;
-    private Vector2 DefaultTransform;
-
-    private void Awake()
-    {
-        DefaultTransform = this.transform.position;
-    }
-    private void InIt()
-    {
-        MyCollider2D.enabled = true;
-        MySpriteRenderer.enabled = true;
-        this.transform.position = DefaultTransform;
-    }
 
     private void ChangeState(EnemyState State)
     {
@@ -46,7 +32,6 @@ public class TrackingMove : MonoBehaviour
             HandleMove();
         }
     }
-
     private void HandleMove()
     {
         Vector2 NewPosition = (TargetObject.position - this.transform.position).normalized;
@@ -55,6 +40,7 @@ public class TrackingMove : MonoBehaviour
 
     private void MyState_Action()
     {
+        if (MyState == EnemyState.Death) return;
         float Distance = Vector2.Distance(TargetObject.position, this.transform.position);
         switch(MyState)
         {

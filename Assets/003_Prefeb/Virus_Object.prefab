@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1717964007, guid: 9fe8a9a8273e9ab42bcb49d34717dfad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,8 +151,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b34a83a5ac91c6e459f3cf9005cf2b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VirusAttack
+  HitSound: {fileID: 0}
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
-  AttackPowerX: 20
-  AttackPowerY: 60
+  AttackPowerX: 40
+  AttackPowerY: 100
+  KnockDistance: 0.5
+  TestLayer:
+    serializedVersion: 2
+    m_Bits: 4096

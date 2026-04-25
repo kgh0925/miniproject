@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
@@ -5,6 +6,7 @@ public class PauseMenu : MonoBehaviour
     [Header("Ref")]
     [SerializeField] private PlayerInputReader MyInputReader;
     [SerializeField] private Transform GameMenuUI;
+    //[SerializeField] private ScreenTopDown MyScreenTopDown;
     private bool IsOpened;
     private void Awake()
     {
@@ -18,15 +20,19 @@ public class PauseMenu : MonoBehaviour
     {
         if(MyInputReader.GameMenuPressedThisFrame)
         {
-            if(IsOpened)
-            {
-                GameMenuUI.gameObject.SetActive(false);
-            }
-            else
-            {
-                GameMenuUI.gameObject.SetActive(true);
-            }
-            IsOpened = !IsOpened;
+            ActiveUI();
         }
     }
+    public void ActiveUI()
+    {
+        IsOpened = !IsOpened;
+        GameMenuUI.gameObject.SetActive(IsOpened); // 열려있으면 닫기, 닫아져있으면 열기 
+        Time.timeScale = IsOpened ? 0 : 1;
+    }
+/*    public void SceneLoadUI()
+    {
+        if (MyScreenTopDown == null) return;
+        IsOpened = !IsOpened;
+        Time.timeScale = IsOpened ? 0 : 1;
+    }*/
 }

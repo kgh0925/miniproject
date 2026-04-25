@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9046094184043465421}
   - component: {fileID: 7477172983180540546}
   - component: {fileID: 5642095110877307322}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Teleporter_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d26f56e49c3914baf74bf456ec5469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Telepoter
-  TargetObject: {fileID: 7014382532362663788}
+  TargetObject: {fileID: 796862051972111270}
   CoolDown: 5
 --- !u!1 &9027283367432008932
 GameObject:
@@ -155,8 +155,8 @@ GameObject:
   - component: {fileID: 5262534734743416159}
   - component: {fileID: 5573998457973205963}
   - component: {fileID: 4155029238405763244}
-  - component: {fileID: 7014382532362663788}
-  m_Layer: 0
+  - component: {fileID: 796862051972111270}
+  m_Layer: 11
   m_Name: Teleporter_Sub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 2}
   m_Radius: 4
---- !u!114 &7014382532362663788
+--- !u!114 &796862051972111270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

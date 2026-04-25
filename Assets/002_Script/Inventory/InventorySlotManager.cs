@@ -10,18 +10,46 @@ public class InventorySlotManager : MonoBehaviour
     [SerializeField] private ShopItemCatalog Catalog;
     [SerializeField] private InventorySlot SlotPrefeb;
     [SerializeField] private Transform SlotContainer;
+    [SerializeField] private EquipItem ChildEquip;
+    [SerializeField] private UndoSystem MyUndoSystem;
+
 
 
     private List<InventorySlot> Slots = new List<InventorySlot>();
-
+    private void OnEnable()
+    {
+        PlayerData.Instance.EquipEvent += EquipDrawAllSlots;
+        PlayerData.Instance.TypeEvent += ShoppingDrawAllSlots;
+        MyUndoSystem.OnUndo += UndoDrawAllSlots;
+        DrawAllSlots(ItemType.Skin);
+    }
+    private void OnDisable()
+    {
+        PlayerData.Instance.EquipEvent -= EquipDrawAllSlots;
+        PlayerData.Instance.TypeEvent -= ShoppingDrawAllSlots;
+        MyUndoSystem.OnUndo -= UndoDrawAllSlots;
+    }
     private void Start()
     {
         BuildSlotViews();
         DrawAllSlots(ItemType.Skin);
     }
+    private void UndoDrawAllSlots(string Id)
+    {
+        DrawAllSlots(Catalog.GetItemType(Id));
+    }
+    private void EquipDrawAllSlots(string Id)
+    {
+        DrawAllSlots(Catalog.GetItemType(Id));
+    }
+    private void ShoppingDrawAllSlots(string Id)
+    {
+        DrawAllSlots(Catalog.GetItemType(Id));
+    }
+
     public void DrawAllSlots(ItemType Type)
     {
-        if (PlayerData.Instance == null) return;
+        if (PlayerData.Instance == null || Slots.Count <= 0) return;
         IReadOnlyList<string> Inven = PlayerData.Instance.Inventory;
         IReadOnlyList<ShopCatalogEntry> ShopItem = Catalog.ReadShopList;
         int LastIndex = Slots.Count - 1;
@@ -70,6 +98,7 @@ public class InventorySlotManager : MonoBehaviour
             InventorySlot slotInstance = Instantiate(SlotPrefeb, SlotContainer);
             slotInstance.gameObject.name = $"InvenSlot_{slotindex:D2}";
             Slots.Add(slotInstance);
+            Slots[slotindex].Init(ChildEquip);
         }
     }
 

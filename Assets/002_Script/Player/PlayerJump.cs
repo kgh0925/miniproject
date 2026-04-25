@@ -8,13 +8,16 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] Rigidbody2D MyRigidbody;
     [SerializeField] PlayerHp MyPlayerHp;
     [SerializeField] PlayerClimbing MyPlayerClimbing;
+    [SerializeField] AudioClip JumpSound;
+    [SerializeField] private Collider2D GroundCheckCollider;
+    
 
     [Header("Settings")]
     [Tooltip("Script Default : 5.0f")][SerializeField] private float JumpPower = 5.0f;
-    [Tooltip("Script Default : 5.0f")][SerializeField] private float RayCastDistance = 5.0f;
     [SerializeField] private LayerMask TargetLayer;
     [SerializeField] private bool IsGround;
-
+    
+    public bool GroundTrue => IsGround;
     public event Action ClimbingJump;
     public event Action<float> IsJump;
     public event Action<bool> Ground;
@@ -40,6 +43,7 @@ public class PlayerJump : MonoBehaviour
         {
             MyPlayerClimbing = GetComponent<PlayerClimbing>();
         }
+        JumpSound = Resources.Load<AudioClip>("Sound/JumpSound");
     }
 
     private void Update()
@@ -64,11 +68,22 @@ public class PlayerJump : MonoBehaviour
                 MyPlayerHp.ChangeState(PlayerState.Idle);
             }
         }
-        if (PlayerInputReader.JumpPressedThisFrame && !MyPlayerHp.NotMove 
-            && (IsGround || MyPlayerClimbing.IsWall) && !MyPlayerClimbing.IsWallJump)
+        if (MyPlayerClimbing == null)
         {
-            jumpRequested = true;
+            if (PlayerInputReader.JumpPressedThisFrame && !MyPlayerHp.NotMove && IsGround)
+            {
+                jumpRequested = true;
+            }
         }
+        else
+        {
+            if (PlayerInputReader.JumpPressedThisFrame && !MyPlayerHp.NotMove
+            && (IsGround || MyPlayerClimbing.IsWall) && !MyPlayerClimbing.IsWallJump)
+            {
+                jumpRequested = true;
+            }
+        }
+
 
         WasGround = IsGround;
     }
@@ -92,25 +107,24 @@ public class PlayerJump : MonoBehaviour
         //Debug.Log("Jump");
         MyRigidbody.linearVelocity = new Vector2(MyRigidbody.linearVelocityX, JumpPower);
         IsJump?.Invoke(JumpPower);
-        if (MyPlayerClimbing.IsWall) ClimbingJump?.Invoke();
+        if (MyPlayerClimbing != null &&MyPlayerClimbing.IsWall) ClimbingJump?.Invoke();
+        if(JumpSound != null && SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySfxOneShot(JumpSound);
+        }
 
     }
 
     private void GroundCheck()
     {
-        RaycastHit2D m_raycastHit2D = Physics2D.Raycast(transform.position, Vector2.down, RayCastDistance, TargetLayer);
+        if (GroundCheckCollider == null)
+        {
+            IsGround = false;
+            Ground?.Invoke(IsGround);
+            return;
+        }
 
-        IsGround = m_raycastHit2D.collider != null;
+        IsGround = GroundCheckCollider.IsTouchingLayers(TargetLayer);
         Ground?.Invoke(IsGround);
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Vector3 m_Line = transform.position;
-        m_Line.y -= RayCastDistance;
-
-        Gizmos.DrawLine(transform.position , m_Line);
-    }
-
 }

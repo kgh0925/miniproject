@@ -56,6 +56,10 @@ public class PlayerFly : MonoBehaviour
                 FlyTime();
             }
         }
+        if(MaxEnerge && FlyTimeUI.enabled)
+        {
+            FlyTimeUI.enabled = false;
+        }
 
 
     }
@@ -67,10 +71,14 @@ public class PlayerFly : MonoBehaviour
              Fly();
              Flying = true;
         }
-        if(Flying && !MyInputReader.FlyIsPressed || CurrentFlyTime <= 0 || MyPlayerHp.NotMove)
+        if((Flying && !MyInputReader.FlyIsPressed) || CurrentFlyTime <= 0)
         {
             Flying = false;
-            MyRigidbody2D.gravityScale = GravityScale;
+            if(!MyPlayerHp.NotMove)
+            {
+                MyRigidbody2D.gravityScale = GravityScale;
+            }
+            
         }
     }
 
@@ -84,10 +92,19 @@ public class PlayerFly : MonoBehaviour
     }
     private void UpdateFillAmount()
     {
+        if(!FlyTimeUI.enabled)
+        {
+            FlyTimeUI.enabled = true;
+        }
         FlyTimeUI.fillAmount = CurrentFlyTime / TotalFlyTime;
     }
     private void FlyTime()
     {
         CurrentFlyTime = Mathf.Clamp(CurrentFlyTime+Time.deltaTime,0, TotalFlyTime);
+    }
+
+    public void TimeAdd()
+    {
+        CurrentFlyTime = TotalFlyTime;
     }
 }

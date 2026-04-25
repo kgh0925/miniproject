@@ -6,9 +6,11 @@ public class JumpingPlatform : MonoBehaviour, IInteractable
     [Header("Ref")]
     [SerializeField] private SpriteRenderer Sprite;
     [SerializeField] private Collider2D Collider;
+    [SerializeField] private AudioClip JumpingSound;
     [Header("Settings")]
     [Tooltip("Script Default : 10.0f")][SerializeField] private float JumpPower = 10.0f;
     [Tooltip("Repeat or not")][SerializeField]private bool isRepeat;
+    [SerializeField] private float SpawnDelay = 5.0f;
 
     private void Awake()
     {
@@ -32,6 +34,10 @@ public class JumpingPlatform : MonoBehaviour, IInteractable
         if(playerRb != null)
         {
             playerRb.linearVelocityY = JumpPower;
+            if(JumpingSound != null && SoundManager.Instance != null)
+            {
+                SoundManager.Instance.PlaySfxOneShot(JumpingSound);
+            }
             if (!isRepeat)
             {
                 if (Sprite == null || Collider == null) return;
@@ -44,7 +50,7 @@ public class JumpingPlatform : MonoBehaviour, IInteractable
         
         Sprite.enabled = false;
         Collider.enabled = false;
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(SpawnDelay);
         Sprite.enabled = true;
         Collider.enabled = true;
     }

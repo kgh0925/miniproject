@@ -8,6 +8,8 @@ public class ShopSlotManager : MonoBehaviour
     [SerializeField] private ShopItemCatalog Catalog;
     [SerializeField] private ShopSlot SlotPrefeb;
     [SerializeField] private Transform SlotContainer;
+    [SerializeField] private BuyItem ChildsBuyItem;
+    [SerializeField] private UndoSystem MyUndoSystem;
 
 
 
@@ -21,10 +23,17 @@ public class ShopSlotManager : MonoBehaviour
     private void OnEnable()
     {
         PlayerData.Instance.TypeEvent += ShoppingDrawAllSlots;
+        MyUndoSystem.OnUndo += UndoDrawAllSlots;
+        DrawAllSlots(ItemType.Skin);
     }
     private void OnDisable()
     {
         PlayerData.Instance.TypeEvent -= ShoppingDrawAllSlots;
+        MyUndoSystem.OnUndo -= UndoDrawAllSlots;
+    }
+    private void UndoDrawAllSlots(string Id)
+    {
+        DrawAllSlots(Catalog.GetItemType(Id));
     }
     private void ShoppingDrawAllSlots(string Id)
     {
@@ -32,6 +41,7 @@ public class ShopSlotManager : MonoBehaviour
     }
     public void DrawAllSlots(ItemType Type)
     {
+        if (Slots.Count <= 0) return;
         IReadOnlyList<ShopCatalogEntry> ShopItem = Catalog.ReadShopList;
         IReadOnlyList<string> PlayerInven = PlayerData.Instance.Inventory;
 
@@ -39,6 +49,7 @@ public class ShopSlotManager : MonoBehaviour
         int firstIndex = 0;
         for(int i = 0; i < Slots.Count; i++)
         {
+            
             ShopCatalogEntry entry = i < ShopItem.Count && ShopItem[i].Category == Type ? ShopItem[i] : new ShopCatalogEntry { Id = string.Empty, BuyCode = -1 };   
             if(string.IsNullOrEmpty(entry.Id))
             {
@@ -86,6 +97,7 @@ public class ShopSlotManager : MonoBehaviour
             ShopSlot slotInstance = Instantiate(SlotPrefeb, SlotContainer);
             slotInstance.gameObject.name = $"ShopSlot_{slotindex:D2}";
             Slots.Add(slotInstance);
+            Slots[slotindex].Init(ChildsBuyItem);
         }
     }
 /*
