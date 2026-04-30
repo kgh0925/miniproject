@@ -3,7 +3,7 @@ I made a masterpiece of the game called Smile Mo
 
 The basic functions of the game are as follows.
 < Function >
-\nStage 1 : Move , Jump
+Stage 1 : Move , Jump
 Stage 2 : Run, Climbing
 Stage 3 : Vaccine, Fly 
 
